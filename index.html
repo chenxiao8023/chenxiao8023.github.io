@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
@@ -11,15 +12,15 @@
             background: #446CB3;
             font-family: 'Montserrat', 'Roboto', 'Helvetica', 'Arial', sans-serif;
         }
-
-        body > div {
+        
+        body>div {
             position: absolute;
             top: 20%;
             right: 20%;
             left: 20%;
             bottom: 20%;
         }
-
+        
         p {
             position: absolute;
             bottom: 60%;
@@ -33,8 +34,8 @@
             color: white;
             text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
         }
-
-        p > span {
+        
+        p>span {
             font-size: 12px;
             font-weight: 200;
             text-transform: none;
@@ -44,8 +45,8 @@
             font-weight: 400;
             color: #E4F1FE;
         }
-
-        p > span > a {
+        
+        p>span>a {
             color: #E4F1FE;
             position: relative;
             font-weight: 900;
@@ -56,12 +57,12 @@
             margin: 0 2px;
             transition: .75s;
         }
-
-        p > span > a:hover {
+        
+        p>span>a:hover {
             padding-bottom: 4px;
             transition: .25s;
         }
-
+        
         a.link {
             position: absolute;
             width: 20%;
@@ -74,46 +75,47 @@
             padding: 30px 0;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
         }
-
-        a.link > span {
+        
+        a.link>span {
             display: block;
             text-align: center;
             font-size: 14px;
             font-weight: 700;
             text-transform: uppercase;
         }
-
+        
         #catchme {
             left: 25%;
             z-index: 99;
             color: #D91E18;
         }
-
+        
         .no {
             right: 25%;
             color: black;
         }
     </style>
-    <script src="陈啸/js/jquery-1.12.2.js"></script>
+    <script src="jquery-1.12.2.js"></script>
     <script>
-        $(function () {
-            $('#catchme').hover(function () {
+        $(function() {
+            $('#catchme').hover(function() {
 
                 $(this).css('position', 'absolute').css('top', Math.random() * 90 + '%').css('left', Math.random() * 90 + '%');
 
             });
         })
-
     </script>
 </head>
+
 <body>
-<div>
+    <div>
 
-    <p>抓住他, <br/>you can<span>Grab the "yes" - By JLNLJN<br/>Inspired by the funny Who's the king ?</span></p>
+        <p>抓住他, <br/>you can<span>Grab the "yes" - By JLNLJN<br/>Inspired by the funny Who's the king ?</span></p>
 
-    <a href="#" class="link" id="catchme"><span>Yes</span></a>
-    <a href="#" class="link no"><span>No</span></a>
+        <a href="#" class="link" id="catchme"><span>Yes</span></a>
+        <a href="#" class="link no"><span>No</span></a>
 
-</div>
+    </div>
 </body>
+
 </html>
